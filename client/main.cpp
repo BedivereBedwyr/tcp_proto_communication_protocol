@@ -35,7 +35,7 @@ void sendMessage(Message& msg)
     boost::asio::io_context io_context;
     tcp::socket s(io_context);
     tcp::resolver resolver(io_context);
-    boost::asio::connect(s, resolver.resolve("127.0.0.1", "31415"));
+    boost::asio::connect(s, resolver.resolve("127.0.0.1", "30313"));
 
     // sending to server
     boost::system::error_code ec;
